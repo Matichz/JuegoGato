@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/app.css">
+    <title>Juego gato</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Juego Gato</h1>
+        <div class="configuracion-juego">
+            <div class="player-x players">x</div>
+            <div class="player-o players">o</div>
+        </div>
+        <div class="contenedor-tabla">
+            <div class="contenedor-tablero">
+                <div class="cuadrado cuadrado-arriba-izquierda casilla-1"></div>
+                <div class="cuadrado cuadrado-arriba-centro casilla-2"></div>
+                <div class="cuadrado cuadrado-arriba-derecha casilla-3"></div>
+            </div>
+            <div class="contenedor-tablero">
+                <div class="cuadrado cuadrado-centro-izquierda casilla-4"></div>
+                <div class="cuadrado cuadrado-centro-centro casilla-5"></div>
+                <div class="cuadrado cuadrado-centro-derecha casilla-6"></div>
+            </div>
+            <div class="contenedor-tablero">
+                <div class="cuadrado cuadrado-abajo-izquierda casilla-7"></div>
+                <div class="cuadrado cuadrado-abajo-centro casilla-8"></div>
+                <div class="cuadrado cuadrado-abajo-derecha casilla-9"></div>
+            </div>
+            <div class="linea-ganadora-horizontal"></div>
+            <div class="linea-ganadora-vertical"></div>
+            <div class="linea-ganadora-diagonal"></div>
+            <button class="btn-volver-jugar" id="boton-volver-jugar">Volver a jugar</button>
+        </div>
+        <div class="contenedor-ganador">
+            <h2 class="text-ganador">¡El ganador es <span class="player_ganador"></span>!</h2>
+        </div>
+    </div>
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
